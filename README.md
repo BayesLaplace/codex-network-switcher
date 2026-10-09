@@ -74,7 +74,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\Test-Switch.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Build-Package.ps1
 ```
 
-ZIP 位于 `dist/codex-network-switcher-v1.0.0.zip`。Windows 上的 GitHub Actions 会自动执行测试。
+ZIP 位于 `dist/codex-network-switcher-v1.0.1.zip`。Windows 上的 GitHub Actions 会自动执行测试。
 
 ## 手动指定模式
 

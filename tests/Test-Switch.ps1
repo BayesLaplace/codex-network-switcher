@@ -85,3 +85,6 @@ try {
     if (-not $resolvedFixture.StartsWith($requiredPrefix, [StringComparison]::OrdinalIgnoreCase)) { throw 'Unsafe temporary cleanup path' }
     if (Test-Path -LiteralPath $resolvedFixture) { Remove-Item -LiteralPath $resolvedFixture -Recurse -Force }
 }
+# Expected failure cases launch children that return 1. A successful test run
+# must not leave that exit status for the GitHub Actions PowerShell wrapper.
+$global:LASTEXITCODE = 0
